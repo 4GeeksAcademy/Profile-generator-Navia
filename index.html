@@ -1,88 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card Generator</title>
-<script
-      src="https://kit.fontawesome.com/072e5df971.js"
-      crossorigin="anonymous"
-    ></script>
-</head>
-<body>
-  <ul class="filters">
-      <li>
-        <label>Include Cover</label>
-        <select class="picker" for="includeCover">
-          <option value="">Include Cover</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
-        </select>
-      </li>
-      <li>
-        <label>Name</label>
-        <input class="picker" for="name" type="text" />
-      </li>
-      <li>
-        <label>Last Name</label>
-        <input class="picker" for="lastName" type="text" />
-      </li>
-      <li>
-        <label>S.M. Position</label>
-        <select class="picker" for="socialMediaPosition">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
-        </select>
-      </li>
-      <li>
-        <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
-      </li>
-      <li>
-        <label>Github</label>
-        <input class="picker" for="github" type="text" />
-      </li>
-      <li>
-        <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
-      </li>
-      <li>
-        <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
-      </li>
-      <li>
-        <label>Role</label>
-        <select class="picker" for="role">
-          <option value="">null</option>
-          <option value="Web Developer">Web Developer</option>
-          <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
-        </select>
-      </li>
-      <li>
-        <label>City</label>
-        <select class="picker" for="city">
-          <option value="">null</option>
-          <option value="Miami">Miami</option>
-          <option value="Munich">Munich</option>
-          <option value="Caracas">Caracas</option>
-          <option value="Toronto">Toronto</option>
-        </select>
-      </li>
-      <li>
-        <label>Country</label>
-        <select class="picker" for="country">
-          <option value="">null</option>
-          <option value="USA">USA</option>
-          <option value="Germany">Germany</option>
-          <option value="Canada">Canada</option>
-          <option value="Venezuela">Venezuela</option>
-        </select>
-      </li>
-    </ul>
-    <div id="widget_content"></div>
+    <link rel="stylesheet" href="style.css">
+   <script src="app.js"></script>
+   <script src="https://kit.fontawesome.com/7f4aad2011.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+      <div class="container" style="text-align: center;">
+        <ul class="filters" style="display: flex; list-style-type: none";>
+          <li>
+            <label>Include Cover</label>
+            <select class="picker" for="includeCover">
+              <option value="">Include Cover</option>
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+          </li>
+          <li>
+            <label>Name</label>
+            <input class="picker" for="name" type="text" />
+          </li>
+          <li>
+            <label>Last Name</label>
+            <input class="picker" for="lastName" type="text" />
+          </li>
+          <li>
+            <label>S.M. Position</label>
+            <select class="picker" for="socialMediaPosition">
+              <option value="position-left">Left</option>
+              <option value="position-right">Right</option>
+            </select>
+          </li>
+          <li>
+            <label>Twitter</label>
+            <input class="picker" for="twitter" type="text" placeholder="Twitter"/>
+          </li>
+          <li>
+            <label>Github</label>
+            <input class="picker" for="github" type="text" placeholder="Github" />
+          </li>
+          <li>
+            <label>LinkedIn</label>
+            <input class="picker" for="linkedin" type="text" placeholder="LinkedIn"/>
+          </li>
+          <li>
+            <label>Instagram</label>
+            <input class="picker" for="instagram" type="text" placeholder="Instagram" />
+          </li>
 
+
+
+
+
+          <li>
+            <label>Role</label>
+            <select class="picker" for="role">
+              <option value=""></option>
+              <option value="Web Developer">Web Developer</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Ux">UX/UI Designer</option>
+            </select>
+          </li>
+          <li>
+            <label>City</label>
+            <select class="picker" for="city">
+              <option value=""></option>
+              <option value="Sunrise">Sunrise</option>
+              <option value="Davie">Davie</option>
+              <option value="Miami">Miami</option>
+            </select>
+          </li>
+          <li>
+            <label>Country</label>
+            <select class="picker" for="country">
+              <option value=""></option>
+              <option value="USA">USA</option>
+              <option value="Ireland">Ireland</option>
+            </select>
+          </li>
+        </ul>
+        <div id="widget_content"></div>
+      </div>
+  
+
+<div class="container">
+  <ul class="position-right">
+            <li><a href="https://twitter.com/4geeksacademy"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://github.com/4geeksacademy"><i class="fa-brands fa-github"></i></a></li>
+           <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/4geeksacademy"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+  <div class="card" style="text-align: center;">
+    <div class="card-top">
+      <div class="card-top-img">
+        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 12rem; height: 12rem; border-radius: 50%;"> 
+      </div>
+      <div class="card-bottom">
+    <span id="first_name">Navia</span>
+    <span id="last_name">Matute</span>
+    
+    </div>
+    <span id="social_media"></span>
+
+    <span id="role_job"></span>
+    <div>
+    <span id="new_city"></span>
+    </div>
+    <span id="new_country"></span>
+</div>
+</div>
     <!-- do not remove this bundle.js tag -->
-    <script type="text/javascript" src="/main.bundle.js"></script>  
-</body>
+    <script type="text/javascript" src="/main.bundle.js"></script>
+  </body>
 </html>
