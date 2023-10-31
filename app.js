@@ -12,10 +12,16 @@ window.onload = function () {
     document.querySelector("#last_name").innerText = last_name.value;
  });
 
- let social_media = document.querySelector("[for=socialMediaPosition]");
- social_media.addEventListener("input", () => {
-    document.querySelector("#social_media").innerText = social_media.value;
+
+ let x = document.querySelector("[for=socialMediaPosition]");
+ x.addEventListener("input", () => {
+  if (x.value === "left") {
+document.querySelector(".icons").style.left = '-15%';
+ } else{
+  document.querySelector(".icons").style.left = '90%';
+ }
  });
+  
 
  let twitt = document.querySelector("[for=twitter]");
  twitt.addEventListener("input", () => {

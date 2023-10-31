@@ -1,0 +1,15 @@
+.card {
+    position: relative;
+    width: 35%;
+   margin: auto;
+   background-color: rgb(209, 226, 226);
+}
+
+.icons {
+    position:absolute;
+    top: 20%;
+    left: -15%;
+    list-style-type: none;
+    font-size: large;
+    
+}
