@@ -1,8 +1,12 @@
 .card {
     position: relative;
     width: 35%;
-   margin: auto;
-   background-color: rgb(209, 226, 226);
+    height: 350px;
+    margin: auto;
+    background-color: rgb(228, 244, 244);
+    border-radius: 40px;
+    text-align: center;
+    background-image: repeating-conic-gradient(red 10%, yellow 20%) ;
 }
 
 .icons {
@@ -11,5 +15,21 @@
     left: -15%;
     list-style-type: none;
     font-size: large;
+    
+}
+
+span {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 30px;
+color: rgb(125, 20, 109);
+}
+label {
+    color: rgb(125, 20, 109);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*img {
+    width: 12rem; 
+    height: 12rem;
     
 }

@@ -1,5 +1,7 @@
-// import "../style/index.css";
 
+
+
+//BEFORE ALL THIS MESS!!!!!!!!!!!!!
 window.onload = function () {
   let first_name = document.querySelector("[for=name]");
   first_name.addEventListener("input", () => {
@@ -12,41 +14,23 @@ window.onload = function () {
   });
 
   let x = document.querySelector("[for=socialMediaPosition]");
-  x.addEventListener("change", () => {
-    if (x.value === "Left") {
+  x.addEventListener("input", () => {
+    if (x.value === "left") {
       document.querySelector(".icons").style.left = "-15%";
     } else {
-      document.querySelector(".icons").style.left = "100%";
+      document.querySelector(".icons").style.left = "90%";
     }
   });
 
-  //CHANGE COVER
-  //let cover = document.querySelector("[for=includeCover]");
-  //cover.addEventListener("change", () => {
-  // if (cover.value === "true") {
-  //  document.querySelector("#myImage").src
-  // } else {
-  // document.querySelector("#myImage").src = "none";
-  // }
-  //});
 
-  //let cover = document.querySelector("[for=includeCover]");
-  //cover.addEventListener("change", () => {
-  //if (cover.value === "true") {
-  //document.querySelector(".card").style.display = 'none';
-  //} else {
-  //document.querySelector("#myImage").src = "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ;
-  //}
-  // });
-
-  let cover = document.querySelector("[for=includeCover]");
-  cover.addEventListener("change", () => {
-   if (cover.value === "true") {
-    document.querySelector(".card").innerHTML
-   } else {
-   document.querySelector(".card").style.backgroundImage = "";
-   }
-  });
+  // let covers = document.querySelector("[for=includeCover]");
+  //    covers.addEventListener("change", () => {
+  //     if (covers.value === "true") {
+  //      document.getElementById(".card").style.backgroundImage ="color";
+  //     } else {
+  //     document.getElementById(".card").style.backgroundImage = "";
+  //     }
+  //   });
 
   let twitt = document.querySelector("[for=twitter]");
   twitt.addEventListener("input", () => {
@@ -67,10 +51,19 @@ window.onload = function () {
   new_country.addEventListener("input", () => {
     document.querySelector("#new_country").innerText = new_country.value;
   });
+
+  let cover = document.querySelector("[for=includeCover]");
+  cover.addEventListener("change", () => {
+    if (covers.value === "true") {
+    document.querySelector("card").innerText = cover.value;
+    }else {
+      document.getElementById(".card").style.backgroundImage = "";
+    }
+  });
 };
 
 function ttt(input, textElement, isALink = false) {
-  if (isALink) {
+  if (link) {
     input.addEventListener("input", () => {
       textElement.href = input.value;
       return;
@@ -81,13 +74,13 @@ function ttt(input, textElement, isALink = false) {
   });
 }
 ttt(
-  document.querySelector("[for=socialMediaPosition]"),
+  document.querySelector("socialMediaPosition"),
   document.querySelector("#social_media")
 );
-// ttt(input, textElement, true);
+ttt(input, textElement, true);
 
 function role_job(input, textElement, aLink = false) {
-  if (aLink) {
+  if (elink) {
     input.addEventListener("input", () => {
       textElement.href = input.value;
       return;
@@ -97,13 +90,13 @@ function role_job(input, textElement, aLink = false) {
     textElement.innerText = input.value;
   });
 }
-role_job(document.querySelector("[for=role]"), document.querySelector("#role_job"));
+role_job(document.querySelector("role"), document.querySelector("#role_job"));
 
-
+role_job(input, textElement, true);
 
 //CITY
 function new_city(input, textElement, atLink = false) {
-  if (atLink) {
+  if (theLink) {
     input.addEventListener("input", () => {
       textElement.href = input.value;
       return;
@@ -113,13 +106,13 @@ function new_city(input, textElement, atLink = false) {
     textElement.innerText = input.value;
   });
 }
-new_city(document.querySelector("[for=city]"), document.querySelector("#new_city"));
+new_city(document.querySelector("city"), document.querySelector("#new_city"));
 
-//new_city(input, textElement, true);
+new_city(input, textElement, true);
 
 //COUNTRY
 function new_country(input, textElement, meLink = false) {
-  if (meLink) {
+  if (thatLink) {
     input.addEventListener("input", () => {
       textElement.href = input.value;
       return;
@@ -135,3 +128,4 @@ new_country(
 );
 
 new_country(input, textElement, true);
+  

@@ -1,3 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+   <script defer src="app.js"></script>
+   <!- <script src="https://kit.fontawesome.com/7f4aad2011.js" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+      <div class="container" style="text-align: center;">
+        <ul class="filters" style="display: flex; list-style-type: none";>
+          <li>
+            <label>Include Cover</label>
+            <select class="picker" for="includeCover">
+              <option value="">Include Cover</option>
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+          </li>
+
+
+          <li>
+            <label>Name</label>
+            <input class="picker" for="name" type="text" />
+          </li>
+          <li>
+            <label>Last Name</label>
+            <input class="picker" for="lastName" type="text" />
+          </li>
+          <li>
+            <label>S.M.Position</label>
+            <select class="picker" for="socialMediaPosition">
+              <option value="Left">Left</option>
+              <option value="Right">Right</option>
+            </select>
+          </li>
+          <li>
+            <label>Twitter</label>
+            <input class="picker" for="twitter" type="text" placeholder="Twitter"/>
+          </li>
+          <li>
+            <label>Github</label>
+            <input class="picker" for="github" type="text" placeholder="Github" />
+          </li>
+          <li>
+            <label>LinkedIn</label>
+            <input class="picker" for="linkedin" type="text" placeholder="LinkedIn"/>
+          </li>
+          <li>
+            <label>Instagram</label>
+            <input class="picker" for="instagram" type="text" placeholder="Instagram" />
+          </li>
+
+
+          <li>
+            <label>Role</label>
+            <select class="picker" for="role">
+              <option value=""></option>
+              <option value="Web Developer">Web Developer</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Ux">UX/UI Designer</option>
+            </select>
+          </li>
+          <li>
+            <label>City</label>
+            <select class="picker" for="city">
+              <option value=""></option>
+              <option value="Sunrise">Sunrise</option>
+              <option value="Davie">Davie</option>
+              <option value="Miami">Miami</option>
+            </select>
+          </li>
+          <li>
+            <label>Country</label>
+            <select class="picker" for="country">
+              <option value=""></option>
+              <option value="USA">USA</option>
+              <option value="Ireland">Ireland</option>
+            </select>
+          </li>
+        </ul>
+        <div id="widget_content"></div>
+      </div>
+  
+  <div class="card" > 
+  
+    <div class="card-top">
+     
+</div> 
+      <div class="card-top-img">
+        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&q=80&w=2000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style= "width: 12rem; height: 12rem; border-radius: 50%"> 
+      </div>
+       
+
+      <div class="card-bottom">
+    <span id="first_name">Navia</span>
+    <span id="last_name">Matute</span>
+    <div>
+    <span id="social_media"></span>
+    <span id="role_job"></span>
+    </div>
+    <div>
+    <span id="new_city"></span>
+    </div>
+    <span id="new_country"></span>
+</div>
+
+  <ul class="icons">
+            <li><a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+           <li><a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+</div>
+
+
+
+    <!- do not remove this bundle.js tag 
+    <script type="text/javascript" src="/main.bundle.js"></script>
+  </body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +137,7 @@
       <div class="container" style="text-align: center;">
         <ul class="filters" style="display: flex; list-style-type: none";>
           <li>
-            <label>Include Cover</label>
+            <label id="includeCover">Include Cover</label>
             <select class="picker" for="includeCover">
               <option value="">Include Cover</option>
               <option value="true">True</option>
