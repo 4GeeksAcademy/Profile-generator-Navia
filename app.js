@@ -53,11 +53,11 @@ window.onload = function () {
   });
 
   let cover = document.querySelector("[for=includeCover]");
-  cover.addEventListener("change", () => {
-    if (covers.value === "true") {
-    document.querySelector("card").innerText = cover.value;
+  cover.addEventListener("change", function() {
+    if (covers.value === "no") {
+    document.querySelector(".card").style.display = "none";
     }else {
-      document.getElementById(".card").style.backgroundImage = "";
+      document.getElementById(".card").style.display = "block";
     }
   });
 };
@@ -112,7 +112,7 @@ new_city(input, textElement, true);
 
 //COUNTRY
 function new_country(input, textElement, meLink = false) {
-  if (thatLink) {
+  if (meLink) {
     input.addEventListener("input", () => {
       textElement.href = input.value;
       return;
